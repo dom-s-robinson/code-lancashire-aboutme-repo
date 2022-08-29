@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>About Me</title>
 </head>
 
@@ -18,57 +19,48 @@
         </ul>
     </nav>
     <header>
-        <h1 class="title">Skills & Projects</h1>
+        <h1 class="skillsprojectsheader">Skills & Projects</h1>
     </header>
     <div class="skills">
         <header>
-            <h2>Skills</h2>
+            <h2 class="skillsheader">Skills</h2>
         </header>
-        <section>
-            <ul>
-                <li>Account Management</li>
-                <ul>
-                    <li>1+ years</li>
-                </ul>
-                <li>Sales</li>
-                <ul>
-                    <li>3+ years</li>
-                </ul>
-                <li>Partnerships</li>
-                <ul>
-                    <li>1+ years</li>
-                </ul>
-                <li>Customer Service</li>
-                <ul>
-                    <li>6+ years</li>
-                </ul>
-                <li>CRM Systems</li>
-                <ul>
-                    <li>1+ years</li>
-                </ul>
-                <li>Network Building</li>
-                <ul>
-                    <li>1+ years</li>
-                </ul>
-            </ul>
-        </section>
-    </div>
-    <div class="projects">
-        <header>
-            <h2>Projects</h2>
-        </header>
-        <div class="imagegrid">
-            <img src="../images/responsiblerecovery.PNG" alt="responsible recovery programme">
-            <img src="../images/pricingwithpurpose.jpg" alt="pricing with purpose programme">
-            <img src="../images/ideasintoaction.jpg" alt="ideas into action programme">
-            <img src="../images/leanfor2022.jpg" alt="lean for 2022 programme">
+        <div id="skill-list">
+            <div id="container">
+                <span id="text1"></span>
+                <span id="text2"></span>
+            </div>
+
+            <svg id="filters">
+                <defs>
+                    <filter id="threshold">
+                        <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                              0 1 0 0 0
+                              0 0 1 0 0
+                              0 0 0 255 -140" />
+                    </filter>
+                </defs>
+            </svg>
         </div>
-    </div>
-    <hr>
-    <footer>
-        <span>Practice website for C.O.D.E Lancashire, a training programme delivered by <a
-                href="https://scale-ability.co.uk/" target="_blank" rel="noopener noreferer">Scale-Ability</a></span>
-    </footer>
+        <div class="projects">
+            <header>
+                <h2 class="projectsheader">Projects</h2>
+            </header>
+            <div id="gallery">
+                <img src="../images/responsiblerecovery.PNG" alt="responsible recovery programme">
+                <img src="../images/pricingwithpurpose.jpg" alt="pricing with purpose programme">
+                <img src="../images/ideasintoaction.jpg" alt="ideas into action programme">
+                <img src="../images/leanfor2022.jpg" alt="lean for 2022 programme">
+                <img src="../images/Help-to-Grow-550x550.png" alt="help to grow programme">
+                <img src="../images/cyberstrategyprogramme.jpg" alt="cyber strategy programme">
+            </div>
+            <hr>
+            <footer>
+                <span>Practice website for C.O.D.E Lancashire, a training programme delivered by <a
+                        href="https://scale-ability.co.uk/" target="_blank"
+                        rel="noopener noreferer">Scale-Ability</a></span>
+            </footer>
+            <script src="../js/morph.js"></script>
 </body>
 
 </html>
